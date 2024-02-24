@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation_admin"
+    app:startDestination="@+id/nav_inicio_a">
+
+    <fragment
+        android:id="@+id/nav_inicio_a"
+        android:name="com.vaxwe.mascotasapp.ui.admin.home.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_mi_cuenta_a"
+        android:name="com.vaxwe.mascotasapp.ui.admin.gallery.GalleryFragment"
+        android:label="@string/menu_mi_cuenta"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_registro_a"
+        android:name="com.vaxwe.mascotasapp.ui.admin.slideshow.SlideshowFragment"
+        android:label="@string/menu_perfiles"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_lista_a"
+        android:name="com.vaxwe.mascotasapp.ui.admin.lista_users.ListaFragmentA"
+        android:label="@string/menu_listar_admin"
+        tools:layout="@layout/fragment_slideshow" />
+</navigation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Menú principal" />
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_inicio_c"
+            android:icon="@drawable/home_v"
+            android:title="@string/menu_inicio_c" />
+        <item
+            android:id="@+id/nav_mi_cuenta_c"
+            android:icon="@drawable/perfil_v"
+            android:title="@string/menu_mi_cuenta_c" />
+
+
+    </group>
+
+</menu>

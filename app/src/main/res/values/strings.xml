@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">MascotasApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!--TEXTOS DE INICIO DE SESION-->
+    <string name="LoginTXT">Bienvenido</string>
+    <!--DATOS PARA EL INGRESO-->
+    <string name="Email">Nombre de usuario:</string>
+    <string name="Password">Contraseña:</string>
+    <!--BOTON INGRESO USUARIO-->
+    <string name="Acceder">Acceder</string>
+    <!--BOTON REGISTRAR USUARIO-->
+    <string name="Registrar">Registrate</string>
+    <!--BOTON RECUPERAR CONTRASEÑA-->
+    <string name="BtnResetPass">Recuperar contraseña</string>
+
+
+    <!--RECUPERAR PASS-->
+    <string name="EmailResetTXT">Restaurar contraseña</string>
+    <string name="RecuperarEmail">Nombre de usuario:</string>
+    <string name="BtnAccederResetPass">Enviar</string>
+    <string name="TxtNotaPass">Si el correo electronico esta registrado en la base de datos podras restablecer tu contraseña.</string>
+
+    <!--REGISTRAR USUARIO-->
+    <string name="RegistroTXT">Registrate para continuar</string>
+    <string name="BtnCrearUser">Enviar</string>
+    <string name="NombreUser">Nombre:</string>
+    <string name="ApellidoUser">Apellido:</string>
+    <string name="EmailUser">Email:</string>
+    <string name="PassUser">Contraseña:</string>
+    <string name="PassRUser">Confirmar contraseña:</string>
+
+    <!--TEXTOS HEADER NAV-->
+    <string name="NombreCabezeraA">----</string>
+    <string name="EmailCabezeraA">----</string>
+
+    <!--TEXTOS MENU LATERAL ADMIN-->
+    <string name="menu_inicio">Inicio</string>
+    <string name="menu_mi_cuenta">Mi cuenta</string>
+    <string name="menu_perfiles">Perfiles</string>
+    <string name="menu_listar_admin">Usuarios</string>
+    <string name="menu_productos_admin">Productos</string>
+    <string name="menu_servicios_admin">Servicios</string>
+    <!--TEXTOS MENU LATERAL ADMIN-->
+    <string name="Salir_admin">Cerrar sesión</string>
+
+
+    <!--TEXTOS MENU LATERAL CLIENTE-->
+    <string name="menu_inicio_c">Inicio</string>
+    <string name="menu_mi_cuenta_c">Mi cuenta</string>
+    <string name="Salir_cliente">Cerrar sesión</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--VISTA SESION CLIENTE-->
+    <string name="NombreCategoriaD">--</string>
+
+</resources>
