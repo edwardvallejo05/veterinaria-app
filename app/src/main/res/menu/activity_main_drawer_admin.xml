@@ -15,13 +15,13 @@
             android:icon="@drawable/perfil_v"
             android:title="@string/menu_mi_cuenta" />
         <item
-            android:id="@+id/nav_registro_a"
-            android:icon="@drawable/registro_v"
-            android:title="@string/menu_perfiles" />
-        <item
             android:id="@+id/nav_lista_a"
             android:icon="@drawable/lista_v"
             android:title="@string/menu_listar_admin" />
+        <item
+            android:id="@+id/nav_registro_a"
+            android:icon="@drawable/registro_v"
+            android:title="@string/menu_perfiles" />
         <item
             android:id="@+id/nav_categorias_a"
             android:icon="@drawable/category_v"

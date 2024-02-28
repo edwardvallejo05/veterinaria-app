@@ -60,4 +60,40 @@
     <!--VISTA SESION CLIENTE-->
     <string name="NombreCategoriaD">--</string>
 
+
+    <!--REGISTRO DE ADMINISTRADORES-->
+
+    <string name="RegistroNuevo">Registro de Usuarios</string>
+    <string name="CorreoUser">Email:</string>
+    <string name="PasswordUser">Contraseña:</string>
+    <string name="Nombre1">Nombre:</string>
+    <string name="Nombre_user">Nombre usuario:</string>
+    <string name="Apellido1">Apellido:</string>
+    <string name="Direccion">Direccion:</string>
+    <string name="Telefono">Telefono:</string>
+    <string name="Identificacion">Identificacion:</string>
+    <string name="Id_Pertil">Id_Pertil:</string>
+    <string name="Id_User">Id:</string>
+    <string name="GuardarUser">Guardar</string>
+    <string name="Roll">Admin/User</string>
+    <string name="RegistrarUser">Registrar</string>
+
+
+    <!--PERFIL ADMINISTRADOR-->
+
+    <string name="InformacionAdministradorTxt">Mi información</string>
+    <string name="UidAdministradorTxt">Mi ID</string>
+    <string name="UidAdministrador">--</string>
+    <string name="NombreAdministradorTxt">Nombre:</string>
+    <string name="NombreAdministrador">--</string>
+    <string name="ApellidoAdministradorTxt">Apellido:</string>
+    <string name="ApellidoAdministrador">--</string>
+    <string name="EmailAdministradorTxt">Email:</string>
+    <string name="EmailAdministrador">--</string>
+    <string name="PassdordAdministradorTxt">Password:</string>
+    <string name="PassdordAdministrador">--</string>
+    <string name="PasswordActualizarAdministrador">Actualizar password</string>
+    <string name="DatosActualizarAdministrador">Actualizar datos</string>
+
+
 </resources>

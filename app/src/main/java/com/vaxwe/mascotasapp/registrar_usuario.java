@@ -30,7 +30,7 @@ public class registrar_usuario extends AppCompatActivity {
 
     RequestQueue requestQueue;
 
-    private static final String URL1 = "http://192.168.1.11/veterinaria/registrar_usuario.php";
+    private static final String URL1 = "http://10.0.2.2/veterinaria/registrar_usuario.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,11 +87,11 @@ public class registrar_usuario extends AppCompatActivity {
                     }else {
                         crearuser(nombreuser,apellidouser,eamiluser,passuser);
                         NombreUser.requestFocus();
-                        NombreUser.setText("");
+                        /*NombreUser.setText("");
                         ApellidoUser.setText("");
                         EmailUser.setText("");
                         PassUser.setText("");
-                        PassRUser.setText("");
+                        PassRUser.setText("");*/
                     }
 
 
@@ -107,7 +107,8 @@ public class registrar_usuario extends AppCompatActivity {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL1, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Toast.makeText(registrar_usuario.this, "Cliente registrado exitosamente", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(registrar_usuario.this, InicioSesion.class));
+                Toast.makeText(registrar_usuario.this, "Usuario dado de alta", Toast.LENGTH_SHORT).show();
 
             }
         }, new Response.ErrorListener() {
@@ -126,6 +127,7 @@ public class registrar_usuario extends AppCompatActivity {
                 params.put("apellido",apellidouser);
                 params.put("correo",eamiluser);
                 params.put("contraseña",passuser);
+                params.put("accion","crear");
                 return params;
             }
         };

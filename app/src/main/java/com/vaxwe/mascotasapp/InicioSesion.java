@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,7 +18,10 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.vaxwe.mascotasapp.ui.Adapter;
+import com.vaxwe.mascotasapp.ui.Lista_usuarios;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -30,7 +34,10 @@ public class InicioSesion extends AppCompatActivity{
 
     RequestQueue requestQueue;
 
-    private static final String URL2 = "http://192.168.1.11/veterinaria/login.php";
+
+    private static final String URL2 = "http://10.0.2.2/veterinaria/login.php";
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +51,8 @@ public class InicioSesion extends AppCompatActivity{
         Acceder = findViewById(R.id.Acceder);
         Registrate = findViewById(R.id.Registrate);
         BtnResetPass = findViewById(R.id.BtnResetPass);
+
+
 
 
 
@@ -106,9 +115,10 @@ public class InicioSesion extends AppCompatActivity{
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL2, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                if (response.equals("Bienvenido")) {
-                    // Inicio de sesión exitoso, dirigir a la actividad principal
-                    //startActivity(new Intent(InicioSesion.this, MainActivityCliente.class));
+
+                if (response.equals("Inicio de sesión exitoso")) {
+                    //Inicio de sesión exitoso, dirigir a la actividad principal
+                    startActivity(new Intent(InicioSesion.this, MainActivityAdmin.class));
                     Toast.makeText(InicioSesion.this, "Bienvenido", Toast.LENGTH_SHORT).show();
                 } else {
                     // Usuario o contraseña incorrectos, mostrar un mensaje de error

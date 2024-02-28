@@ -3,7 +3,9 @@ package com.vaxwe.mascotasapp;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,7 +30,7 @@ public class reset_pass extends AppCompatActivity {
 
     RequestQueue requestQueue;
 
-    private static final String URL3 = "http://192.168.1.11/veterinaria/recovery.php";
+    private static final String URL3 = "http://10.0.2.2/veterinaria/recovery.php";
 
 
 
@@ -53,9 +55,12 @@ public class reset_pass extends AppCompatActivity {
                     Toast.makeText(reset_pass.this, "El campo no debe estar vacio.", Toast.LENGTH_SHORT).show();
                     RecuperarEmail.setFocusable(true);
 
+                }else{
+
+                    EnviarMail(recuperarEmail);
                 }
 
-                EnviarMail(recuperarEmail);
+
             }
         });
 
@@ -67,7 +72,18 @@ public class reset_pass extends AppCompatActivity {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL3, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
-                Toast.makeText(reset_pass.this, "Credenciales enviadas al correo", Toast.LENGTH_SHORT).show();
+                Log.d("RESPONSE", response.toString());
+                if (response.equals("Credenciales enviadas al correo")) {
+                    //Inicio de sesión exitoso, dirigir a la actividad principal
+                    startActivity(new Intent(reset_pass.this, InicioSesion.class));
+                    Toast.makeText(reset_pass.this, "Credenciales enviadas al correo", Toast.LENGTH_SHORT).show();
+
+                } else {
+                    // Usuario o contraseña incorrectos, mostrar un mensaje de error
+                    Toast.makeText(reset_pass.this, "El Usuario no está registrado en el Sistema", Toast.LENGTH_SHORT).show();
+
+                }
+
 
             }
         }, new Response.ErrorListener() {

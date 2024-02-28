@@ -64,7 +64,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="@drawable/background_1"
-            android:layout_marginTop="-100dp"
+            android:layout_marginTop="-150dp"
             android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp">
 
@@ -83,7 +83,7 @@
                 android:background="@color/color7" />
 
             <TextView
-                android:text="Por favor ingresa tu Email."
+                android:text="Ingresa tu nombre de usuario."
                 android:textStyle="normal"
                 android:layout_margin="10dp"
                 android:textSize="18sp"
