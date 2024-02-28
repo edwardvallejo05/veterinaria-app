@@ -23,9 +23,9 @@
             android:icon="@drawable/registro_v"
             android:title="@string/menu_perfiles" />
         <item
-            android:id="@+id/nav_categorias_a"
+            android:id="@+id/nav_razas"
             android:icon="@drawable/category_v"
-            android:title="@string/menu_productos_admin" />
+            android:title="@string/menu_razas_admin" />
         <item
             android:id="@+id/nav_verpn_a"
             android:icon="@drawable/servicios_v"

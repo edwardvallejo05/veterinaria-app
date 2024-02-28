@@ -45,6 +45,7 @@
     <string name="menu_perfiles">Perfiles</string>
     <string name="menu_listar_admin">Usuarios</string>
     <string name="menu_productos_admin">Productos</string>
+    <string name="menu_razas_admin">Razas</string>
     <string name="menu_servicios_admin">Servicios</string>
     <!--TEXTOS MENU LATERAL ADMIN-->
     <string name="Salir_admin">Cerrar sesión</string>
